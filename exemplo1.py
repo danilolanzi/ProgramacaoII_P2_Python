@@ -1,18 +1,11 @@
-'''Procedimento (sem return):'''
+minhaMatriz = []
 
-def mostrar_boas_vindas():
-    print("Bem-vindo(a) ao sistema!")
+for i in range (2):
+    linha = []
+    for j in range(2):
+        valor = int(input('valor: '))
+        linha.append(valor)
 
-'''Chamando o nosso procedimento mostrar_boas_vindas:'''
-
-mostrar_boas_vindas()
-
-'''Função (com return):'''
-
-def somar(a, b):
-    return a + b
-
-'''Chamando a nossa função somar:'''
-
-resultado = somar(3, 4)
-print("Resultado:", resultado)
+minhaMatriz.append(linha)
+for linha in minhaMatriz:
+    print(linha)
